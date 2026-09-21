@@ -1,0 +1,10 @@
+{
+  "name":"明德｜运营岗位资质题库",
+  "short_name":"明德",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#07111f",
+  "theme_color":"#07111f",
+  "description":"离线可用的运营岗位资质刷题与记忆训练",
+  "icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
