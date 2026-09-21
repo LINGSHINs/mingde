@@ -7,7 +7,7 @@
   <meta name="description" content="明德｜运营岗位资质刷题与记忆训练" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./styles.css?v=3" />
+  <link rel="stylesheet" href="./styles.css?v=4" />
   <title>明德</title>
 </head>
 <body>
@@ -16,12 +16,12 @@
     <aside class="sidebar" id="sidebar">
       <div class="brand"><span class="brand-mark">明</span><div><strong>明德</strong><small>知所先后，则近道矣</small></div></div>
       <nav id="nav" aria-label="主导航">
-        <button class="nav-item active" data-view="home"><span>⌂</span>学习台</button>
-        <button class="nav-item" data-view="practice"><span>◫</span>开始刷题</button>
-        <button class="nav-item" data-view="wrong"><span>◇</span>错题集</button>
-        <button class="nav-item" data-view="progress"><span>◉</span>学习进度</button>
-        <button class="nav-item" data-view="themes"><span>✦</span>主题与外观</button>
-        <button class="nav-item" data-view="settings"><span>⚙</span>偏好设置</button>
+        <a class="nav-item active" href="#home" data-view="home"><span>⌂</span>学习台</a>
+        <a class="nav-item" href="#practice" data-view="practice"><span>◫</span>开始刷题</a>
+        <a class="nav-item" href="#wrong" data-view="wrong"><span>◇</span>错题集</a>
+        <a class="nav-item" href="#progress" data-view="progress"><span>◉</span>学习进度</a>
+        <a class="nav-item" href="#themes" data-view="themes"><span>✦</span>主题与外观</a>
+        <a class="nav-item" href="#settings" data-view="settings"><span>⚙</span>偏好设置</a>
       </nav>
       <div class="sidebar-foot"><div class="sync-dot"></div><span>数据保存在本机</span></div>
     </aside>
@@ -36,13 +36,6 @@
     </main>
   </div>
 
-  <nav class="mobile-dock" aria-label="移动端导航">
-    <button class="dock-item active" data-view="home"><span>⌂</span>学习</button>
-    <button class="dock-item" data-view="practice"><span>◫</span>刷题</button>
-    <button class="dock-item" data-view="wrong"><span>◇</span>错题</button>
-    <button class="dock-item" data-view="progress"><span>◉</span>进度</button>
-    <button class="dock-item" data-view="settings"><span>⚙</span>设置</button>
-  </nav>
   <button class="focus-exit" id="focusExit" aria-label="退出专注模式"><span>←</span> 退出专注 <kbd>Esc</kbd></button>
 
   <div class="drawer-backdrop" id="backdrop"></div>
@@ -50,7 +43,7 @@
   <dialog id="sheetDialog" class="sheet-dialog"><div class="dialog-head"><div><small>快速定位</small><h2>答题卡</h2></div><button class="icon-btn" data-close>×</button></div><div id="answerSheet" class="answer-sheet"></div></dialog>
   <dialog id="setupDialog" class="setup-dialog"><form method="dialog" id="setupForm"><div class="dialog-head"><div><small>新建训练</small><h2 id="setupTitle">选择刷题范围</h2></div><button class="icon-btn" value="cancel">×</button></div><div id="setupBody"></div><div class="dialog-actions"><button class="btn ghost" value="cancel">取消</button><button class="btn primary" id="setupStart" value="default">开始训练</button></div></form></dialog>
 
-  <script src="./questions.js?v=3"></script>
-  <script src="./app.js?v=3"></script>
+  <script src="./questions.js?v=4"></script>
+  <script src="./app.js?v=4"></script>
 </body>
 </html>
